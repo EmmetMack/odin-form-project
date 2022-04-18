@@ -1,6 +1,6 @@
 @font-face {
     font-family: main-font;
-    src: url(../fonts/Norse-Bold.otf);
+    src: url(./fonts/Norse-Bold.otf);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -8,7 +8,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -33,8 +33,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body div {
 	line-height: 1;
+    display: flex;
+   
 }
 ol, ul {
 	list-style: none;
@@ -50,4 +52,20 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+#lhs-background {
+    width: 33%;
+    height: 100%;
+}
+
+.right-side {
+    width: 67%;
+    flex:1 0;
+    margin-left: auto;
+}
+
+
+h1 {
+    font-family: main-font, serif;
 }
