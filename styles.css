@@ -110,12 +110,65 @@ form {
     width: 100%;
     background-color: #FFFFFF;
     padding-left: 3.5rem;
+    box-shadow: 2px 4px #b4b5b8;
 }
 
 .form-content {
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20%;
+}
+
+.form-content h3 {
+    margin-right: 50%;
+    font-size: 1.5rem;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.form-fields:last-child {
+    padding-bottom: 1rem;
+}
+
+.form-fields input {
+    width: 125%;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+}
+
+.form-fields input:focus {
+    border-color: #0f3b92;
+    box-shadow: 1px 3px #b4b5b8;
 }
 
 a {
     color: white;
 }
+
+.create-account-section {
+    margin-top: 2rem;
+    padding-left: 3.5rem;
+}
+
+.create-account-section button {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+input[type="password"]:error {
+    
+}
+
